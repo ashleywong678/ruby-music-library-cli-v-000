@@ -33,6 +33,8 @@ class MusicLibraryController
       list_songs_by_artist
     elsif command == "list genre"
       list_songs_by_genre
+    elsif command == "play song"
+      play_song
     elsif command != 'exit'
       call
     end
