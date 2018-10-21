@@ -78,7 +78,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     song_num = gets.strip.to_i
     # binding.pry
-    if list_songs.length+1 >= song_num
+    if Songs.all.length+1 >= song_num
       list_songs.find {|song| song.split('.').include?(song_num-1)}
       puts "Playing #{song.name} by #{song.artist.name}"
     end
