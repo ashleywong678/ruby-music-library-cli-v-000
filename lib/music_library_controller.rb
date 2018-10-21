@@ -23,8 +23,12 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     command = gets.strip
-    if command == 
-    if command != 'exit'
+    if command == "list songs"
+      list_songs
+    elsif command == "list artists"
+      list_artists
+    
+    elsif command != 'exit'
       call
     end
   end
