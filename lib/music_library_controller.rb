@@ -31,7 +31,8 @@ class MusicLibraryController
       list_genres
     elsif command == "list artist"  
       list_songs_by_artist
-    elsif command == 
+    elsif command == "list genre"
+      list_songs_by_genre
     elsif command != 'exit'
       call
     end
