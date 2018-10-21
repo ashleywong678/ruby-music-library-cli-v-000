@@ -76,9 +76,8 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     song_num = gets.strip
-    
     if list_songs.include?(song_num)
-      
+      list_songs[song_num.to_i]
     end
   end
   
